@@ -18,8 +18,30 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ main.container {
+    background-color: white;
+    width: 480px;
+    margin: 80px auto;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
