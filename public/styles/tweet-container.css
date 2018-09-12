@@ -25,6 +25,7 @@
     border-radius: 8px 8px 0px 0px;
 
 
+
 }
 
 .username {
@@ -68,6 +69,7 @@ foot.tweet{
 p.foot {
     font-size: 3mm;
     padding-left: 10px;
+    margin-bottom: 50px;
 }
 
 p.account{
@@ -82,5 +84,3 @@ p.account{
         border-color: rgb(207, 207, 207);
         transition: border-color 0.3s;   
 }
-
-
