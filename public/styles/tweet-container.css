@@ -1,0 +1,42 @@
+.container .post-container {
+    background-color: lightgrey;
+    margin: 80px 2em 80px 2em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.post-container .header {
+    
+    background-color: rgb(235, 235, 235);
+    
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.post-container .footer {
+    
+    background-color: rgb(235, 235, 235);
+    
+    border-radius: 8px 8px 0px 0px;
+
+
+}
+
+.username {
+    margin: 0px;
+    padding: 20px;
+}
+
+.userimg {
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 8px;
+}

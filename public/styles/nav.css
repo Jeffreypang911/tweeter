@@ -25,30 +25,6 @@
     
 }
 
-.container .new-tweet {
-    background-color: lightgrey;
-    margin: 80px 2em 80px 2em;
-    padding: 1px 20px 10px 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    border-radius: 10px;
-    
-}
-
-.container .new-tweet textarea {
-    width: 100%;
-    padding: 0.5em;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-}
-
-.container .new-tweet h2 {
-    border-bottom: 2px solid black;
-    padding-bottom: 2px;
-}
-
 .container {
     border-left:    2px solid #b3b3b3;
     border-right:  2px solid #b3b3b3; 
@@ -62,3 +38,6 @@
     border-color: black
 }
 
+.red {
+    color: red
+}

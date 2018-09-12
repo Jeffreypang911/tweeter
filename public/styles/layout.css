@@ -45,3 +45,8 @@ body {
   display: table;
   clear: both;
 }
+
+/* main.container:hover {
+  width: 495px;
+  transition: width 0.5s ease;
+} */
