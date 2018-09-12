@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-    
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/fade.js"></script>
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
-
-    <!--Character Count-->
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    
   </head>
 
   <body>
@@ -46,13 +46,15 @@
 
           <section class="post-container">
             <header class="header">
-              <img class="userimg" src="/images/23931.png"> 
-              <h2 class="username">Bill Fields</h2>
+              <img class="userimg" src="/images/23931.png">
+              <h2 class="username"></h2>
+              <p class="account"></p>
             </header>
-            <br>
-            this is my tweet
-            <footer>
-              TEN DAYS AGOOOO
+            <p class="tweet"></p>
+            <footer class="tweet">
+              <img class="retweetlogo" src="/images/retweet_icon.png">
+              <p class="foot"></p>
+              
             </footer>
           </section>
 

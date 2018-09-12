@@ -12,6 +12,7 @@
     background-color: rgb(235, 235, 235);
     
     border-radius: 8px 8px 0px 0px;
+    height: 80px;
     border-bottom: solid;
     border-width: 2px;
     border-color: black;
@@ -27,8 +28,11 @@
 }
 
 .username {
+    display: inline-block;
+    height 0;
     margin: 0px;
-    padding: 20px;
+    padding-top: 15px;
+    
 }
 
 .userimg {
@@ -39,4 +43,44 @@
     border-width: 2px;
     border-color: black;
     border-radius: 8px;
+    float: left;
 }
+
+p.tweet {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: white;
+
+}
+
+foot.tweet{
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+p.foot {
+    font-size: 3mm;
+    padding-left: 10px;
+}
+
+p.account{
+    float: right;
+    font-size: 3.5mm;
+    margin-right: 15px;
+    margin-top: 17px;
+}
+
+.post-container:hover {
+        border-style: solid;
+        border-color: rgb(207, 207, 207);
+        transition: border-color 0.3s;   
+}
+
+
