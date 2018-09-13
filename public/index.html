@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/warningbox.css" type="text/css" />
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
@@ -31,11 +32,13 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <div class="header">Tweeter</div>
-      <button id="compose" class="float-right" type="submit" value="Compose">
+      <button id="compose" class="float-right" type="submit">New Tweet</button>>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+        <div id="warningbox1" class="warningbox"><h3>"Please Enter Tweet!"</h3></div>
+        <div id="warningbox2" class="warningbox"><h3>"Tweet Is Too long!"</h3></div>
       <section class="new-tweet group">
           <h2>Compose Tweet</h2>
           <form id="tweet-new" method="POST" action="/tweets/">

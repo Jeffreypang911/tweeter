@@ -44,12 +44,14 @@
 
 #compose {
     width:100px;
-    height:60px;
-    margin: 10px;
+    height:40px;
+    margin: 20px;
     border-style: solid;
     border-width: 2px;
     border-color: darkgrey;
     border-radius: 10px;
+    font-size: 4mm;
+    color: rgb(99, 99, 99);
 }
 
 #compose:hover {
@@ -57,3 +59,4 @@
     border-color: black;
     transition: border-color 0.3s;   
 }
+

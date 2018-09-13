@@ -87,12 +87,15 @@ $(document).ready(function() {
       });
   }
 
-
-
+  //slides tweet box up and down upon button press
   $( "#compose" ).click(function() {
       $( ".new-tweet" ).slideToggle()
   })
-
+  //resets warning box message
+  $( "#text" ).click(function() {
+    $("#warningbox1").slideUp();
+    $("#warningbox2").slideUp();
+  })
 
 
   // renderTweets(tweetData);
@@ -104,10 +107,10 @@ $(document).ready(function() {
     let formData = $('#tweet-new').serialize()
     let textArea = $('textarea').val();
     if (textArea === '') {
-      alert("Please Enter Tweet");
+      $( "#warningbox1" ).slideDown();
     } 
     else if (textArea.length > 140) {
-      alert("Your tweet is too long")
+      $( "#warningbox2" ).slideDown();
     }
     else {
     $.ajax('/tweets/', { method:'POST', data: formData}).then(function() {
