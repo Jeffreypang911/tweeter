@@ -49,14 +49,18 @@ $(document).ready(function() {
 
   //   example: var $tweet = $("<article>").addClass("tweet");
 
-
+  function escape(str) {
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
 
 
 
   const createTweetElement = function (tweetObject) {
       var $article = $("<article>");
       var $header = $("<header>").addClass("header");
-      var $content = $("<p>").addClass("tweet").append(tweetObject.content.text);
+      var $content = $("<p>").addClass("tweet").append(escape(tweetObject.content.text));
       var $footer = $("<footer>").addClass("tweet");
 
       var $image = $("<img>").addClass("userimg").attr('src', tweetObject.user.avatars.large);
@@ -73,7 +77,7 @@ $(document).ready(function() {
       $article.append($content);
       $article.append($footer);
 
-      $('#post-container').append($article);     
+      $('#post-container').prepend($article);     
   }
 
   function renderTweets(tweets) {
@@ -85,6 +89,10 @@ $(document).ready(function() {
 
 
 
+  $( "#compose" ).click(function() {
+      $( ".new-tweet" ).slideToggle()
+  })
+
 
 
   // renderTweets(tweetData);
@@ -94,17 +102,47 @@ $(document).ready(function() {
     e.preventDefault();
     
     let formData = $('#tweet-new').serialize()
-
+    let textArea = $('textarea').val();
+    if (textArea === '') {
+      alert("Please Enter Tweet");
+    } 
+    else if (textArea.length > 140) {
+      alert("Your tweet is too long")
+    }
+    else {
     $.ajax('/tweets/', { method:'POST', data: formData}).then(function() {
-      //clear text area
       $('textarea').val('');
-      
-
       return $.ajax('/tweets/');
     
     }).then(function(tweets){ 
         renderTweets(tweets);
     });
+  }
+});
+
+
+
+
+// $(function() {
+//   var $button = $('#load-more-posts');
+//   $button.on('click', function () {
+//     console.log('Button clicked, performing ajax call...');
+//     $.ajax('more-posts.html', { method: 'GET' })
+//     .then(function (morePostsHtml) {
+//       console.log('Success: ', morePostsHtml);
+//       $button.replaceWith(morePostsHtml);
+//     });
+//   });
+// });
+
+
+var loadTweets = function() {
+  $.ajax('/tweets/', { method: 'GET' })
+  .then(function(tweets){
+    renderTweets(tweets);
   });
+};
+
+loadTweets();
 
 });

@@ -36,10 +36,20 @@
     border-radius: 10px;
 } */
 
-/* a:hover
+a:hover
 {
     image: src('/images/retweet_icon.png');
-    height:20px
+    height:20px;
     width:100px;
     display:block;
-} */
+}
+
+#text:hover {
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    transition: border-color 0.3s;   
+}
+
+.new-tweet {
+    display: none;
+}
