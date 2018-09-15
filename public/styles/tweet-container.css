@@ -1,14 +1,8 @@
 .container .post-container {
-    background-color: lightgrey;
     margin: 20px 2em 80px 2em;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    border-radius: 10px;
 }
 
 .post-container .header {
-    
     background-color: rgb(235, 235, 235);
     border-radius: 8px 8px 0px 0px;
     height: 80px;
@@ -18,12 +12,8 @@
 }
 
 .post-container .footer {
-    
     background-color: rgb(235, 235, 235);
-    
     border-radius: 8px 8px 0px 0px;
-
-
 
 }
 
@@ -32,7 +22,6 @@
     height 0;
     margin: 0px;
     padding-top: 15px;
-    
 }
 
 .userimg {
@@ -48,21 +37,17 @@
 
 p.tweet {
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding: 20px;
-    border-top: solid;
     border-bottom: solid;
     border-width: 2px;
     border-color: black;
     background-color: white;
-
 }
 
-foot.tweet{
-    padding: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+footer.tweet{
+    padding: 15px;
+    background-color: rgb(235, 235, 235);
 }
 
 p.foot {
@@ -78,10 +63,32 @@ p.account{
     margin-top: 17px;
 }
 
-.post-container:hover {
-        border-style: solid;
-        border-color: rgb(207, 207, 207);
-        transition: border-color 0.3s;   
+.likebutton:hover {
+    padding: 2px
 }
 
+.likebutton {
+    height: 17px;
+    width: 17px;
+    float: right;
+    margin: 5px;
+}
 
+#timestamp {
+    margin-bottom: 0px;
+    width: 300px;
+}
+
+footer.tweet {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(235, 235, 235);
+}
+
+article.article {
+    border-radius: 9px;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    margin-bottom: 45px;
+}

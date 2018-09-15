@@ -29,21 +29,6 @@
     display: flex;
 }
 
-/* .header {
-    border-top: solid;
-    border-width: 2px;
-    border-color: black;
-    border-radius: 10px;
-} */
-
-a:hover
-{
-    image: src('/images/retweet_icon.png');
-    height:20px;
-    width:100px;
-    display:block;
-}
-
 #text:hover {
     border-style: solid;
     border-color: rgb(207, 207, 207);
