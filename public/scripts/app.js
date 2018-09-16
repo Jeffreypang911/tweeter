@@ -50,7 +50,7 @@ $(document).ready(function() {
   });
   //like button
   $('body').on("click", ".likebutton", function(){
-    alert("You like this!");
+    alert("You Like This!");
   });
   // renderTweets(tweetData);
   $('#tweet-new').on('submit', function(e) {
