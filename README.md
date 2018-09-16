@@ -4,4 +4,10 @@ This project focuses on front end CSS/HTML. Interactive webpage is achieved with
 
 Enjoy!
 
+
+!["Tweet Compose Box"](https://github.com/Jeffreypang911/tweeter/blob/master/screen_shots/Home%20Page.png)
+
+!["Tweet is too long!"](https://github.com/Jeffreypang911/tweeter/blob/master/screen_shots/Tweet%20is%20Too%20Long!.png)
+
 Jeffrey Pang
+
